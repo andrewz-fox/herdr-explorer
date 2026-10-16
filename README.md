@@ -2,6 +2,8 @@
 
 A read-only [Herdr](https://herdr.dev) plugin for browsing a project and reviewing Git changes while an agent such as Codex or Claude Code edits the code. It does not replace Android Studio, and it never writes source files or changes Git state.
 
+![File Explorer open beside a coding agent in Herdr](dev/screenshots/file-explorer.jpg)
+
 Android Studio, the Android SDK, Gradle, and Java are not required.
 
 ## Requirements
