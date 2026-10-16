@@ -1,6 +1,6 @@
 id = "herdr-explorer"
 name = "File Explorer"
-version = "0.1.0"
+version = "0.1.1"
 min_herdr_version = "0.7.0"
 description = "Read-only project browser and Git review companion"
 platforms = ["linux", "macos"]
@@ -10,6 +10,6 @@ command = ["sh", "scripts/install.sh"]
 
 [[panes]]
 id = "explorer"
-title = "File Explorer"
+title = "File Explorer 0.1.1"
 placement = "split"
 command = ["sh", "scripts/launch.sh"]

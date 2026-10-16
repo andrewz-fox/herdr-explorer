@@ -124,8 +124,14 @@ def test_h_and_l_scroll_sideways(repo: Path) -> None:
 
 
 def test_manifest_contract() -> None:
+    from herdr_explorer import __version__
+
     manifest = tomllib.loads((ROOT / "herdr-plugin.toml").read_text(encoding="utf-8"))
+    package = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
     assert manifest["id"] == "herdr-explorer"
+    assert manifest["version"] == __version__
+    assert package["project"]["version"] == __version__
+    assert manifest["panes"][0]["title"] == f"File Explorer {__version__}"
     assert manifest["min_herdr_version"] == "0.7.0"
     assert manifest["platforms"] == ["linux", "macos"]
     assert manifest["build"][0]["command"] == ["sh", "scripts/install.sh"]

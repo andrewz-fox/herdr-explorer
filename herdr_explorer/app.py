@@ -16,6 +16,7 @@ from textual.widgets import Footer, Static, TabbedContent, TabPane
 from textual.widgets._tabbed_content import ContentTab, ContentTabs
 from textual.worker import get_current_worker
 
+from herdr_explorer import __version__
 from herdr_explorer.core.git import (
     GitChange,
     GitCommandError,
@@ -42,8 +43,8 @@ NO_PROJECT = (
     "python -m herdr_explorer /path/to/project"
 )
 
-HELP_TEXT = """\
-File Explorer
+HELP_TEXT = f"""\
+File Explorer {__version__}
 
 f              Focus Files
 c              Focus Changes
@@ -84,7 +85,7 @@ class HelpScreen(ModalScreen[None]):
 class AndroidExplorerApp(App[None]):
     """Read-only project browser and Git review companion."""
 
-    TITLE = "File Explorer"
+    TITLE = f"File Explorer {__version__}"
     CSS_PATH = "styles/app.tcss"
     BINDINGS = [
         Binding("f", "focus_files", "Files"),

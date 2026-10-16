@@ -16,6 +16,18 @@ Android Studio, the Android SDK, Gradle, and Java are not required.
 
 ripgrep is recommended for Search in Files. Without it, the plugin searches with Python.
 
+## Version
+
+File Explorer uses [semantic versioning](https://semver.org). Anything below `1.0.0` is a beta.
+
+| Change | Version |
+| --- | --- |
+| A fix that behaves the same for existing users | `0.1.2`, `0.1.3`, … |
+| New behavior, including a change to a shortcut or workflow | `0.2.0`, `0.3.0`, … |
+| First release that is no longer a beta | `1.0.0` |
+
+The current beta is `0.1.1`. The pane title shows it, and it is the first line of the shortcut help (`?`). `herdr plugin list --json` includes the same number.
+
 ## Installation
 
 ```bash
