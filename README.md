@@ -12,6 +12,8 @@ Android Studio, the Android SDK, Gradle, and Java are not required.
 - Python 3.11 or newer
 - Git
 
+[Ghostty](https://ghostty.org) is recommended. A sideways trackpad swipe scrolls the file when the terminal sends horizontal scroll events, which Ghostty does. In Apple Terminal, use `h` and `l`, Shift plus a vertical swipe, or click and drag.
+
 ripgrep is recommended for Search in Files. Without it, the plugin searches with Python.
 
 ## Installation
