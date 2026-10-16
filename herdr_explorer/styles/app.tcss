@@ -1,0 +1,124 @@
+Screen {
+    layout: vertical;
+}
+
+#body {
+    height: 1fr;
+}
+
+#sidebar {
+    width: 25%;
+    min-width: 28;
+    height: 100%;
+    border-right: solid $primary;
+}
+
+#main {
+    width: 1fr;
+    height: 100%;
+}
+
+#path-bar {
+    height: 1;
+    background: $boost;
+    color: $text;
+    padding: 0 1;
+}
+
+TabbedContent {
+    height: 1fr;
+}
+
+/* Stretch each tab across half the sidebar so the whole bar is clickable. */
+ContentTabs {
+    height: 3;
+}
+
+ContentTabs #tabs-list {
+    width: 1fr;
+    height: 2;
+}
+
+ContentTab {
+    width: 1fr;
+    height: 2;
+    content-align: center middle;
+}
+
+TabPane {
+    height: 1fr;
+    padding: 0;
+}
+
+ProjectTree {
+    height: 1fr;
+}
+
+ChangesList {
+    height: 1fr;
+}
+
+#file-viewer {
+    height: 1fr;
+}
+
+#code {
+    height: 1fr;
+}
+
+#file-message {
+    height: 1fr;
+    padding: 1 2;
+    color: $text-muted;
+}
+
+#diff-view {
+    height: 1fr;
+    display: none;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#empty-state {
+    padding: 2 4;
+    color: $text-muted;
+}
+
+QuickOpenScreen, SearchScreen, HelpScreen {
+    align: center middle;
+}
+
+#quick-dialog, #search-dialog, #help-dialog {
+    width: 80%;
+    height: 80%;
+    background: $surface;
+    border: solid $accent;
+    padding: 1 2;
+}
+
+#help-dialog {
+    height: auto;
+    max-height: 80%;
+}
+
+#quick-input, #search-input {
+    margin-bottom: 1;
+}
+
+#quick-results, #search-results {
+    height: 1fr;
+}
+
+#search-options {
+    height: 1;
+    margin-bottom: 1;
+}
+
+#search-options Checkbox {
+    width: 1fr;
+}
+
+#search-status {
+    height: 1;
+    color: $text-muted;
+}
